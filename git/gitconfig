@@ -1,0 +1,31 @@
+[core]
+    whitespace = trailling-space
+    editor     = $(which nvim)
+
+[apply]
+    whitespace = fix
+
+[color]
+    ui = auto
+
+[color "branch"]
+    current = white reverse
+    local   = green
+    remote  = red
+
+[color "diff"]
+    meta = white reverse
+    frag = yellow bold
+    old  = red bold
+    new  = green bold
+
+[color "status"]
+    added     = green
+    changed   = yellow
+    untracked = red
+
+[init]
+    defaultBranch = main
+
+[push]
+    default = simple

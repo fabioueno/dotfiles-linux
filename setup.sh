@@ -29,6 +29,7 @@ if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
 fi
 
 echo "Removing directories and files..."
+if [[ -d $HOME/.config/nvim ]]; then rm -rf $HOME/.config/nvim; fi
 if [[ -f $HOME/.bashrc ]]; then rm $HOME/.bashrc; fi
 if [[ -f $HOME/.gitconfig ]]; then rm $HOME/.gitconfig; fi
 if [[ -f $HOME/.tool-versions ]]; then rm $HOME/.tool-versions; fi
@@ -37,6 +38,7 @@ if [[ -f $HOME/.zshrc ]]; then rm $HOME/.zshrc; fi
 
 echo "Creating symlinks..."
 if [[ ! -d $HOME/.dotfiles ]]; then ln -s $HOME/Projects/dotfiles-ubuntu $HOME/.dotfiles; fi
+if [[ ! -d $HOME/.config/nvim ]]; then ln -s $HOME/.dotfiles/nvim $HOME/.config/nvim; fi
 if [[ ! -e $HOME/.gitconfig ]]; then ln -s $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig; fi
 if [[ ! -e $HOME/.tool-versions ]]; then ln -s $HOME/.dotfiles/asdf/tool-versions $HOME/.tool-versions; fi
 if [[ ! -e $HOME/.tfswitchrc ]]; then ln -s $HOME/.dotfiles/terraform/tfswitchrc $HOME/.tfswitchrc; fi

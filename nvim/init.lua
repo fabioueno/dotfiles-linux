@@ -8,6 +8,7 @@ require "fabioueno.plugins"
 require "fabioueno.colorscheme"
 
 --- General
+require "fabioueno.bufferline"
 require "fabioueno.lualine"
 
 require "fabioueno.telescope"
@@ -27,7 +28,6 @@ require "fabioueno.cmp"
 -- require "fabioueno.lsp"
 -- require "fabioueno.gitsigns"
 -- require "fabioueno.nvim-tree"
--- require "fabioueno.bufferline"
 -- require "fabioueno.toggleterm"
 -- require "fabioueno.project"
 -- require "fabioueno.impatient"

@@ -24,8 +24,8 @@ require "fabioueno.comment"
 require "fabioueno.cmp"
 
 --- LSP
+require "fabioueno.lsp"
 
--- require "fabioueno.lsp"
 -- require "fabioueno.gitsigns"
 -- require "fabioueno.nvim-tree"
 -- require "fabioueno.toggleterm"

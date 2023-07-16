@@ -45,8 +45,9 @@ return packer.startup(function(use)
   use { "wbthomason/packer.nvim" } -- Have packer manage itself
 
   -- Basics
-  use { "nvim-lua/plenary.nvim" }       -- Useful lua functions used by lots of plugins
-  use { "nvim-tree/nvim-web-devicons" } -- Dev icons
+  use { "nvim-lua/plenary.nvim" }                                             -- Useful lua functions used by lots of plugins
+  use { "nvim-tree/nvim-web-devicons" }                                       -- Dev icons
+  use { "nvim-tree/nvim-tree.lua", required = "nvim-tree/nvim-web-devicons" } -- File explorer
 
   -- Colorscheme
   use { "lunarvim/darkplus.nvim" }
@@ -84,25 +85,17 @@ return packer.startup(function(use)
   use { "williamboman/mason-lspconfig.nvim" }             -- Mason helper
   use { "jose-elias-alvarez/null-ls.nvim" }               -- Formatters and linters
 
-  -- use { "kyazdani42/nvim-web-devicons", commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352" }
-  -- use { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" }
   -- use { "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }
   -- use { "akinsho/toggleterm.nvim", commit = "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" }
   -- use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
-  -- use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
   -- use { "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" }
   -- use {"folke/which-key.nvim"}
-
-  -- Cmp 
 
   -- Snippets
   -- use { "rafamadriz/friendly-snippets", commit = "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" } -- a bunch of snippets to use
 
   -- LSP
   -- use { "RRethy/vim-illuminate", commit = "d6ca7f77eeaf61b3e6ce9f0e5a978d606df44298" }
-
-  -- Git
-  -- use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

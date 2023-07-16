@@ -12,7 +12,6 @@ null_ls.setup({
 	debug = false,
 
 	sources = {
-    code_actions.gitsigns,
     code_actions.refactoring,
     completion.luasnip,
     completion.vsnip,

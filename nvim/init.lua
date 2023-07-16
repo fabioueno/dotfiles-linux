@@ -4,6 +4,9 @@ require "fabioueno.options"
 require "fabioueno.plugins"
 
 -- Plugins
+-- Basics
+require "fabioueno.nvim-tree"
+
 --- Colorschme
 require "fabioueno.colorscheme"
 
@@ -26,11 +29,8 @@ require "fabioueno.cmp"
 --- LSP
 require "fabioueno.lsp"
 
--- require "fabioueno.gitsigns"
--- require "fabioueno.nvim-tree"
 -- require "fabioueno.toggleterm"
 -- require "fabioueno.project"
--- require "fabioueno.impatient"
 -- require "fabioueno.alpha"
 -- require "fabioueno.whichkey"
 -- require "fabioueno.autocommands"

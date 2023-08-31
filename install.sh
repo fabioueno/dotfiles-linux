@@ -58,7 +58,7 @@ fc-cache -fv
 echo "Installing JQ..."
 sudo apt install -y jq
 
-echo "Installing Neovim..."
+echo "Installing Neovim & LSs..."
 sudo add-apt-repository -y ppa:neovim-ppa/unstable
 sudo apt update -y
 sudo apt install -y neovim
